@@ -10,5 +10,4 @@ public interface EmbedFolder {
     String getExtension();
     int getSize();
     Folder getFolder();
-
 }

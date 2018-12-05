@@ -4,8 +4,8 @@ import com.example.folderservices.models.File;
 import com.example.folderservices.models.Folder;
 import com.example.folderservices.models.User;
 import com.example.folderservices.repositories.FileRepository;
-import com.example.folderservices.repositories.FolderRepository;
-import com.example.folderservices.repositories.UserRepository;
+import com.example.folderservices.repositories.FolderRespository;
+import com.example.folderservices.repositories.UserRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -15,13 +15,13 @@ import org.springframework.stereotype.Component;
 public class DataLoader implements ApplicationRunner {
 
     @Autowired
-    FolderRepository folderRepository;
+    FolderRespository folderRepository;
 
     @Autowired
     FileRepository fileRepository;
 
     @Autowired
-    UserRepository userRepository;
+    UserRespository userRepository;
 
     public DataLoader(){}
 
